@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício CSS - Círculos</title>
+    <style>
+        /* Estilos básicos para alinhar os círculos */
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Estilo geral para os círculos */
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Seções do círculo */
+        .circle .quarter {
+            width: 50%;
+            height: 50%;
+            position: absolute;
+        }
+
+        .top-left {
+            top: 0;
+            left: 0;
+            background-color: red;
+        }
+
+        .top-right {
+            top: 0;
+            right: 0;
+            background-color: orange;
+        }
+
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+            background-color: green;
+        }
+
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Primeiro círculo -->
+        <div class="circle">
+            <div class="quarter top-left"></div>
+            <div class="quarter top-right"></div>
+            <div class="quarter bottom-left"></div>
+            <div class="quarter bottom-right"></div>
+        </div>
+        
+        <!-- Segundo círculo -->
+        <div class="circle">
+            <div class="quarter top-left"></div>
+            <div class="quarter top-right"></div>
+            <div class="quarter bottom-left"></div>
+            <div class="quarter bottom-right"></div>
+        </div>
+        
+        <!-- Terceiro círculo -->
+        <div class="circle">
+            <div class="quarter top-left"></div>
+            <div class="quarter top-right"></div>
+            <div class="quarter bottom-left"></div>
+            <div class="quarter bottom-right"></div>
+        </div>
+    </div>
+</body>
+</html>
